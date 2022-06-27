@@ -2,14 +2,18 @@
 
 // Set values for letters, numbers, characters for generic password generation
 let randomAll = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789[~!@#$%^&*()_+-=[]\{}|;:\'\",./<>?\]";
+let randomString = randomAll;
+let passwordLength = 8; // default value
+
+// TODO create randomString based on Array.prototype.concat() of selected strings
+/*
 let alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let alphaLower = "abcdefghijklmnopqrstuvwxyz";
 let choiceNumbers = "0123456789";
 let characters = "[~!@#$%^&*()_+-=[]\{}|;:\'\",./<>?\]";
 let include = false;
 let chars = [alphaUpper, alphaLower, choiceNumbers, characters];
-let randomString = randomAll;
-let passwordLength = 8; // default value
+*/
 
 // Verify that current input (this.id) is checked  by changing its label style color to green and return to default black when unchecked
 function setLabelColor() {
