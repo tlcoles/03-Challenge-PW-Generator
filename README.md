@@ -6,7 +6,7 @@ The ESMT Boot Camp challenge is to create a random password generator using HTML
 The resulting user interface must be responsive, clean, and polished.  
 
 ## Screenshot
-**Placeholder: Insert here**
+![Screenshot of the password generator](./assets/images/220627-screenshot-Password-Generator.png)
 
 ## Changelog
 
@@ -30,6 +30,6 @@ The resulting user interface must be responsive, clean, and polished.
 * MediaCollege.com for "How to Create Random Numbers & Characters"
 
 ## Contact
-Tammi L. Coles  
-Project link:  
-Working copy:  
+**Tammi L. Coles**  
+Project link:  https://github.com/tlcoles/03-Challenge-PW-Generator  
+Working copy:  https://tlcoles.github.io/03-Challenge-PW-Generator/  
