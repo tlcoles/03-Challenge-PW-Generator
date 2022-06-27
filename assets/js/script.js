@@ -60,7 +60,6 @@ function writePassword() {
       passwordText.value = password;
   }
   let passwordText = document.querySelector("#password");
-  console.log(passwordText.value);
 
 // Capture click on input fields that include the word "option"
 document.getElementById("option-numbers").addEventListener("click", setLabelColor);
