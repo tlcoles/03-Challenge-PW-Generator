@@ -11,7 +11,23 @@ The resulting user interface must be responsive, clean, and polished.
 ## Changelog
 
 * Create core files and folder structure
-* Copy Xandromus starter code
+* Copy starter code
+* Create form fields
+* Set query to set color for selection
+* Capture and pass through password length 
+
+
+## Challenges
+* Changing style based on selector criterium
+* Passing user selection from a range input to output using js textContent method and  oninput call in html
+* Converting input object and converting it to a number using parseInt() 
+
+
+
+
+## Gratitude
+* Xandromus via Github for project starter code
+* Rahul R. via StackOverflow for answer to "HTML5 input type range show range value"
 
 ## Contact
 Tammi L. Coles  

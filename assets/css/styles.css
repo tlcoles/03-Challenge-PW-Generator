@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  --red: hsl(360, 91%, 36%);
 }
 
 html,
@@ -27,7 +28,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: var(--red);
 }
 
 .card {
@@ -42,16 +43,31 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
+/* .card-header::after {
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-}
+} */
 
 .card-body {
   min-height: 100px;
+}
+
+
+.form-body {
+    min-height: 300px;
+  }
+
+.is-checked {
+  color: black;
+  margin-left: 20px;
+}
+
+.is-checked-green {
+  color: green;
+  margin-left: 20px;
 }
 
 .card-footer {
@@ -74,7 +90,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: var(--red);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
