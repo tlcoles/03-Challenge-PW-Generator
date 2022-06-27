@@ -56,18 +56,18 @@ header {
 }
 
 
-.form-body {
-    min-height: 300px;
+.card-header {
+    min-height: 250px;
+    margin: 0 20%;
+    max-width: 100%;
   }
 
 .is-checked {
   color: black;
-  margin-left: 20px;
 }
 
 .is-checked-green {
   color: green;
-  margin-left: 20px;
 }
 
 .card-footer {
