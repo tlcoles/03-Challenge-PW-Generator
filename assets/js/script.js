@@ -1,28 +1,15 @@
 // Assignment code here: Module 3 Challenge
 
-// Set values for letters, numbers, characters for generic password generation
-let randomAll = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789[~!@#$%^&*()_+-=[]\{}|;:\'\",./<>?\]";
-let randomString = randomAll;
-let passwordLength = 8; // default value
-
-// TODO create randomString based on Array.prototype.concat() of selected strings
-/*
-let alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let alphaLower = "abcdefghijklmnopqrstuvwxyz";
-let choiceNumbers = "0123456789";
-let characters = "[~!@#$%^&*()_+-=[]\{}|;:\'\",./<>?\]";
-let include = false;
-let chars = [alphaUpper, alphaLower, choiceNumbers, characters];
-*/
+// Set default value for generic password generation
+let passwordLength = 8; 
 
 // Verify that current input (this.id) is checked  by changing its label style color to green and return to default black when unchecked
 function setLabelColor() {
     let selector = `[for=${this.id}]`
-    console.log(selector);
     let label = document.querySelector(selector);
     if (this.checked) {
       label.style.color = "green";
-    } else {
+      } else {
       label.style.color = "black";
     };
   };
@@ -33,9 +20,38 @@ function getNewPWLength(getNewPWLength) {
   console.log(passwordLength);
 }
 
+// Create 
+function getAlphabet() {
+  let Alphabet = ""  //! start with empty alphabet so last result is cleared away
+  let alphaLower = "abcdefghijklmnopqrstuvwxyz"
+  let alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let choiceNumbers = "0123456789"
+  let characters = "[~!@#$%^&*()_+-=[]\{}|;:\'\",./<>?\]"
+  let randomAll = alphaLower + alphaUpper + choiceNumbers + characters
+  if (!document.getElementById("option-lowercase").checked 
+  && !document.getElementById("option-uppercase").checked
+  && !document.getElementById("option-numbers").checked
+  && !document.getElementById("option-special").checked) {
+    return randomAll
+  }
+ if (document.getElementById("option-numbers").checked) {
+  Alphabet += choiceNumbers
+ }
+ if (document.getElementById("option-lowercase").checked) {
+  Alphabet += alphaLower
+ }
+ if (document.getElementById("option-uppercase").checked) {
+  Alphabet += alphaUpper
+ }
+ if (document.getElementById("option-special").checked) {
+  Alphabet += characters
+ }
+ return Alphabet //* pass value out of function to generatePassword function
+}
+
 // Listen for button click and then generate random string
 function generatePassword() {
-	chars = randomAll;
+	chars = getAlphabet();
 	let stringLength = passwordLength;
 	randomString = '';
 	for (var i=0; i<stringLength; i++) {
@@ -61,8 +77,5 @@ function writePassword() {
   }
   let passwordText = document.querySelector("#password");
 
-// Capture click on input fields that include the word "option"
-document.getElementById("option-numbers").addEventListener("click", setLabelColor);
-document.getElementById("option-lowercase").addEventListener("click", setLabelColor);
-document.getElementById("option-uppercase").addEventListener("click", setLabelColor);
-document.getElementById("option-special").addEventListener("click", setLabelColor);
+// Listen for click on input fields that include the word "option"
+document.querySelector('[id^="option-"]').addEventListener("click", setLabelColor);

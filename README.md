@@ -22,11 +22,13 @@ The resulting user interface must be responsive, clean, and polished.
 * Converting input object and converting it to a number using parseInt() 
 * Scope of values (not just in functions)
 * Targeting element for output with getElementById 
+* Making it simpler by using querySelector
 
 ## Gratitude
 * Xandromus via Github for project starter code
-* Rahul R. via StackOverflow for answer to "HTML5 input type range show range value" [oninput]
-* Programmer buds Morgan R. & Tiffany C. for stepping in when it all started looking like Greek to me
+* Rahul R. via StackOverflow for answer to "HTML5 input type range show range value" (i.e., oninput)
+* Programmer bud Morgan R. for helping me simplify my string selector and return value section
+* Programmer bud Tiffany C. for stepping in when it all started looking like Greek to me
 * MediaCollege.com for "How to Create Random Numbers & Characters"
 
 ## Contact

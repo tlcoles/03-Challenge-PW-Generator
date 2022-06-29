@@ -16,6 +16,7 @@
 
       <div class="card">
 
+        <!-- Create password output area -->
         <div class="card-body">
           <textarea
             readonly
@@ -26,7 +27,8 @@
           ></textarea>
         </div>
 
-        <div class="card-header">
+        <!-- Provide options for password length and character types and js triggers -->
+        <div class="options-section">
           <h2>Options</h2>
           <form id="options-form" action="">
             <label for="password-length">Password length:</label>
@@ -47,7 +49,7 @@
             </form>
         </div>
 
-
+        <!-- Provide the input button and trigger the generator js -->
         <div class="card-footer">
           <form name="randform">
           <input type="button" id="generate" class="btn" value="Generate" onclick="generatePassword();">&nbsp;

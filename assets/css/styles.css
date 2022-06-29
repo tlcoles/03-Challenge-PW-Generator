@@ -1,8 +1,12 @@
+/* Create container with border-box and set color variables */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   --red: hsl(360, 91%, 36%);
+  --lighter-gray: #f9fbfd;
+  --gray: #c0c7cf;
+  --dark-gray: hsl(206, 17%, 28%);
 }
 
 html,
@@ -15,7 +19,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: var(--lighter-gray);
 }
 
 .wrapper {
@@ -36,30 +40,23 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: var(--dark-gray);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
-/* .card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-} */
-
 .card-body {
   min-height: 100px;
 }
 
-
-.card-header {
+/*  Style options section and set color change on status of option */
+.options-section {
     min-height: 250px;
-    margin: 0 20%;
-    max-width: 100%;
+    padding-left: 30%;
+    padding-right: 100px;
+    max-width: 800px;
   }
 
 .is-checked {
@@ -104,14 +101,10 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+/* button[disabled] {
   cursor: default;
-  background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
-}
+  background: var(--gray);
+} */
 
 #password {
   -webkit-appearance: none;
@@ -128,15 +121,15 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed var(--gray);
   border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
-
+/* Restyle for smaller screens */
 @media (max-width: 690px) {
   .btn {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
@@ -144,10 +137,18 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+  .options-section {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  .options-section {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
