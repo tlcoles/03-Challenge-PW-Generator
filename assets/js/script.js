@@ -78,4 +78,7 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
 
 // Listen for click on input fields that include the word "option"
-document.querySelector('[id^="option-"]').addEventListener("click", setLabelColor);
+document.getElementById("option-numbers").addEventListener("click", setLabelColor);
+document.getElementById("option-lowercase").addEventListener("click", setLabelColor);
+document.getElementById("option-uppercase").addEventListener("click", setLabelColor);
+document.getElementById("option-special").addEventListener("click", setLabelColor);

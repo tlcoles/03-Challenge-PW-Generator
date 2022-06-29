@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/css-checkbox.css">
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
@@ -34,17 +35,17 @@
             <label for="password-length">Password length:</label>
             <input type="range" name="passwordLength" id="password-length" min="8" max="128" value="8" oninput="getNewPWLength(this); this.nextElementSibling.value = this.value"><output id="length-output">8</output><br><br> <!-- thanks to Rahul R. for code to show slider result  oninput="this.nextElementSibling.value = this.value"-->
 
-            <input type="checkbox" id="option-numbers" name="option-numbers">
-            <label for="option-numbers" class="is-checked"> 0 1 2 3 5 4 6 7 8 9 </label><br>
+            <input type="checkbox" id="option-numbers" name="option-numbers" class="css-checkbox lite-green-check">
+            <label for="option-numbers" class="is-checked css-label"> 0 1 2 3 5 4 6 7 8 9 </label><br>
             
-            <input type="checkbox" id="option-lowercase" name="option-option-lowercase">
-            <label for="option-lowercase" class="is-checked"> lowercase letters</label><br>
+            <input type="checkbox" id="option-lowercase" name="option-option-lowercase" class="css-checkbox lite-green-check">
+            <label for="option-lowercase" class="is-checked css-label"> lowercase letters</label><br>
             
-            <input type="checkbox" id="option-uppercase" name="option-uppercase">
-            <label for="option-uppercase" class="is-checked"> UPPERCASE LETTERS</label><br>
+            <input type="checkbox" id="option-uppercase" name="option-uppercase" class="css-checkbox lite-green-check">
+            <label for="option-uppercase" class="is-checked css-label"> UPPERCASE LETTERS</label><br>
             
-            <input type="checkbox" id="option-special" name="option-special">
-            <label for="option-special" class="is-checked"> speci@l ch@racter$!<br><br>
+            <input type="checkbox" id="option-special" name="option-special" class="css-checkbox lite-green-check">
+            <label for="option-special" class="is-checked css-label"> speci@l ch@racter$!<br><br>
 
             </form>
         </div>

@@ -22,7 +22,7 @@ The resulting user interface must be responsive, clean, and polished.
 * Converting input object and converting it to a number using parseInt() 
 * Scope of values (not just in functions)
 * Targeting element for output with getElementById 
-* Making it simpler by using querySelector
+* Making it simpler by using querySelector ... and realizing that didn't work as expected
 
 ## Gratitude
 * Xandromus via Github for project starter code
@@ -30,6 +30,7 @@ The resulting user interface must be responsive, clean, and polished.
 * Programmer bud Morgan R. for helping me simplify my string selector and return value section
 * Programmer bud Tiffany C. for stepping in when it all started looking like Greek to me
 * MediaCollege.com for "How to Create Random Numbers & Characters"
+* Checkbox design styling kit via http://www.csscheckbox.com/
 
 ## Contact
 **Tammi L. Coles**  
